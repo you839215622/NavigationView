@@ -7,6 +7,7 @@
 ![image](https://github.com/x-mail/NavigationView/blob/master/demo/demo.gif)<br />
 
 代码说明：<br />
+-----------------
 
 ![image](https://github.com/x-mail/NavigationView/blob/master/demo/dai.png)<br />
 
@@ -16,3 +17,5 @@ app -->>    里面是一个继承自application的.java是为了配置BugHD的�
 listview        -->>       这是通过listview来实现的左侧滑菜单栏menu；<br />
 
 navigationView  -->>      这是通过Android Design Support Library提供的NavigationView实现左侧滑菜单栏menu；<br />
+
+ [This link](http://example.net/) has no title attribute

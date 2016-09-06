@@ -13,19 +13,29 @@
 
 
     <application
-        android:name="com.csy.navitionview.app.Application"
+        android:name="com.csy.app.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!--第一种使用NavigationView来编写左侧菜单栏-->
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--第二种使用listView来编写左侧菜单栏-->
+        <!--<activity android:name="com.csy.listview.activity.MainActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+
+        <!--</activity>-->
 
 
 

@@ -3,18 +3,15 @@
     android:id="@+id/id_drawer_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    <!--DrawerLayout内部一个LinearLayout作为内容区域-->
-       <!--一个NavigationView作为菜单。&ndash;&gt;-->
-         <!--注意下Toolbar的高度设置为wrap_content-->
+
     <LinearLayout
-        android:id="@+id/id_main_content"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!--不加这句好像会变形android:fitsSystemWindows="true"-->
         <android.support.v7.widget.Toolbar
             android:id="@+id/id_toolbar"
             android:layout_width="match_parent"
@@ -29,20 +26,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:text="我是五个字"
+            android:text="nothing"
             android:textSize="30sp"/>
     </LinearLayout>
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/id_nv_menu"
+    <ListView
+        android:id="@+id/id_lv_left_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:paddingTop="0dp"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/container_nav_header"
-        app:menu="@menu/main__nav_menu_drawer"
+        android:background="#ffffffff"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:listSelector="?attr/selectableItemBackground"
         />
 
 </android.support.v4.widget.DrawerLayout>

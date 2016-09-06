@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState)
         {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.main_nav_activity);
+            setContentView(R.layout.activity_nav_main);
 
             mDrawerLayout = (DrawerLayout) findViewById(R.id.id_drawer_layout);
             mNavigationView = (NavigationView) findViewById(R.id.id_nv_menu);

@@ -1,4 +1,4 @@
-package com.csy.navitionview.app;
+package com.csy.app;
 
 import im.fir.sdk.FIR;
 

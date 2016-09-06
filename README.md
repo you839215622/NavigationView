@@ -3,4 +3,4 @@
 
 效果演示
 
-！[gif](https://github.com/x-mail/NavigationView/blob/master/demo/demo.gif)
+！[image](https://github.com/x-mail/NavigationView/blob/master/demo/demo.gif)

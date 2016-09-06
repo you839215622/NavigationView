@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>    <!--设置沉浸式菜单栏-->
+    </style>
+</resources>
+
+
+    <!--ToolBar高度设置为wrap_content-->
+    <!--ToolBar添加属性android:fitsSystemWindows="true"-->
+    <!--header_just_username.xml的跟布局RelativeLayout，添加属性android:fitsSystemWindows="true"-->
+
+    <!--android:fitsSystemWindows这个属性，主要是通过调整当前设置这个属性的view的padding去为我们的status_bar留下空间。-->
+
+    <!--如果你不写，那么状态栏和Toolbar就会有挤一块的感觉了-->

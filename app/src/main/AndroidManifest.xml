@@ -9,10 +9,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
     <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
-
-    <!-- 可选 -->
-    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
-
+    <!--桌面悬浮窗floaView，所需要的权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
 
     <application
         android:name="com.csy.app.Application"
@@ -39,7 +38,7 @@
 
         <!--</activity>-->
 
-
+        <activity android:name="com.csy.floatview.FloatViewDemoActivity"></activity>
 
         <meta-data android:value="d0559b547426833cda2f37e1a9d8b2fa"
             android:name="BUG_HD_SDK_GENERAL_KEY" />

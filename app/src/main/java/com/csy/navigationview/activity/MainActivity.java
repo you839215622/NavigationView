@@ -1,6 +1,7 @@
 package com.csy.navigationview.activity;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -13,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.csy.floatview.FloatViewDemoActivity;
 import com.csy.navigationview.R;
 
 import org.apache.http.conn.util.InetAddressUtils;
@@ -172,6 +174,11 @@ public class MainActivity extends AppCompatActivity {
         {
             mDrawerLayout.openDrawer(GravityCompat.START);
             return true ;
+        }
+
+        if(item.getItemId() == android.R.id.message)
+        {
+            startActivity(new Intent(MainActivity.this, FloatViewDemoActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

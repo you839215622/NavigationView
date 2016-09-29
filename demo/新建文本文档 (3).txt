@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- ×¢²áÀ´µçÐãreceiver-->
+        <!-- receiver-->
         <receiver android:name="com.allenliu.floatview.CallShowReceiver">
 
             <intent-filter>

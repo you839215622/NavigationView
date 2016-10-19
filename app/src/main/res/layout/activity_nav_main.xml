@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
-    android:id="@+id/id_drawer_layout"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
     <!--DrawerLayout内部一个LinearLayout作为内容区域-->
-       <!--一个NavigationView作为菜单。&ndash;&gt;-->
-         <!--注意下Toolbar的高度设置为wrap_content-->
+    <!--一个NavigationView作为菜单。&ndash;&gt;-->
+    <!--注意下Toolbar的高度设置为wrap_content-->
     <LinearLayout
         android:id="@+id/id_main_content"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/id_toolbar"
@@ -21,7 +20,7 @@
             android:background="?attr/colorPrimary"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
         <TextView
             android:id="@+id/id_tv_content"
@@ -31,16 +30,18 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:text="我是五个字"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/id_tv_mac"
-            android:textSize="30sp"
-            android:text="12123445"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="120dp"
             android:layout_marginTop="60dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:text="12123445"
+            android:textSize="30sp"
+            android:visibility="gone" />
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
@@ -50,7 +51,6 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/container_nav_header"
-        app:menu="@menu/main__nav_menu_drawer"
-        />
+        app:menu="@menu/main__nav_menu_drawer" />
 
 </android.support.v4.widget.DrawerLayout>
